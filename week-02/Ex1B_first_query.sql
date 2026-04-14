@@ -1,0 +1,3 @@
+/*
+The pupose of Sakila database is to help us learn SQL and how to organize the database 
+*/
