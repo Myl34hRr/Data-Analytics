@@ -1,0 +1,67 @@
+# Create the function
+def display_mailing_label(name, address, city, state, zip):
+    print(name)
+    print(address)
+    print(f"{city}, {state} {zip}")
+
+# create the fuction 2
+def add_numbers(*args):
+    total = sum(args)
+    numbers = " + ".join(str(num) for num in args)
+    print(f"{numbers} = {total}")
+
+#create function 3
+def display_receipt(total_due, amount_paid):
+
+    # calculate change or remaining balance
+    change_due = amount_paid - total_due
+
+    # display receipt information
+    print(f"Total Due: ${total_due:.2f}")
+    print(f"Amount Paid: ${amount_paid:.2f}")
+
+    # check if customer paid enough
+    if amount_paid >= total_due:
+        print(f"Change Due: ${change_due:.2f}")
+
+    else:
+        remaining_balance = total_due - amount_paid
+        print(f"Remaining Balance: ${remaining_balance:.2f}")
+
+#calling the functions
+
+# first mailing label 
+display_mailing_label("Myleah Richardson", 
+                      "3332 Core Power Rd",
+                    "Balitmore",
+                      "MD",
+                      "21239")
+
+# secound mailing label
+
+display_mailing_label("John Cena", 
+                         "5563 hollywood blv",
+                         "Cronsville",
+                         "MD",
+                         "21032")
+
+# adding numbers
+
+# one number
+add_numbers(33)
+
+#two munders
+add_numbers(16, 20)
+
+# more than two munber
+add_numbers(4, 44, 21, 77, 90)
+
+# 1st recepit 
+
+display_receipt(100.00, 300.50)
+
+# 2nd recepit
+display_receipt(54.30, 54.30)
+
+# 3 recepit
+display_receipt(200.20, 50.50)
