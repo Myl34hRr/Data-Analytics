@@ -1,1 +1,34 @@
+# double variable
 doubler = lambda n: n *2
+print(doubler(8))
+print(doubler(-4))
+print(doubler('banana'))
+
+
+# triple variable
+tripler = lambda n: n *3
+print(tripler(8))
+print(tripler(-4))
+print(tripler('banana'))
+
+# Create a function that returns a lambda function
+def multiplier(x):
+    return lambda n: n * x
+
+# Create multiplier variables
+quadrupler = multiplier(4)
+quintupler = multiplier(5)
+sextupler = multiplier(6)
+septupler = multiplier(7)
+octupler = multiplier(8)
+nonupler = multiplier(9)
+decupler = multiplier(10)
+
+# Test the functions
+print(quadrupler(2))   # 2 * 4
+print(quintupler(2))   # 2 * 5
+print(sextupler(2))    # 2 * 6
+print(septupler(2))    # 2 * 7
+print(octupler(2))     # 2 * 8
+print(nonupler(2))     # 2 * 9
+print(decupler(2))     # 2 * 10
